@@ -1,0 +1,5 @@
+This repository demonstrates a common, yet elusive error in React Native development: the "Unhandled JS Exception: Native module cannot be null" error. This error arises when a native module, required by a third-party library, fails to link or properly integrate within your React Native application. The exact cause often remains obscured, making debugging challenging. This example shows how to identify and resolve this issue.
+
+**Problem:** The core issue is the failure of a bridge between the JavaScript (React Native) and native (e.g., iOS, Android) components of the app. This bridge allows communication, and if it breaks, it prevents the use of certain native functionalities.  The "Native module cannot be null" usually points to a missing or improperly linked native dependency. 
+
+**Solution:** The solution typically involves ensuring the native module is correctly configured and linked. This frequently means correctly installing and linking dependencies, particularly native libraries, in both Android and iOS projects. Double check your package manager configurations and build processes.
